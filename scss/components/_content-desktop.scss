@@ -1,0 +1,61 @@
+@include for-tablet-landscape-up {
+  .content-wrapper {
+    transition: display 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
+  .action {
+    margin-bottom: 0;
+    margin-right: 1.875rem;
+  }
+  .info-content {
+    min-height: 12.84375rem;
+  }
+}
+
+@include for-desktop-up {
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .action {
+    margin-bottom: 0;
+    margin-right: 1.875rem;
+
+    .action-content {
+      min-height: 12.84375rem;
+      min-width: 21.875rem;
+    }
+  }
+
+  .info {
+    bottom: -1.55rem;
+    .info-content {
+      padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+      max-height: 9.6875rem;
+      min-height: 9.6875rem;
+
+      &__heading {
+        text-align: left;
+        width: 100%;
+      }
+
+      &__bar {
+        min-width: 28.75rem;
+        max-width: 28.75rem;
+      }
+
+      &__gb {
+        min-width: 28rem;
+        max-width: 28rem;
+      }
+
+      &__gb-left {
+        top: -3.140625rem;
+        right: 2.5rem;
+      }
+    }
+  }
+}

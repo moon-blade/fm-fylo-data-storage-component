@@ -1,0 +1,87 @@
+.info {
+  position: relative;
+  .info-content {
+    min-width: 20.3125rem;
+    max-width: 33.75rem;
+    background-color: $darkBlue;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.8175rem 1.875rem 3.4375rem 1.875rem;
+
+    &__heading {
+      color: $paleBlue;
+      font-size: 0.875rem;
+      margin-bottom: 1.875rem;
+
+      .gbUsed {
+        font-weight: 700;
+      }
+    }
+
+    &__bar {
+      min-width: 16.5625rem;
+      max-width: 16.5625rem;
+      min-height: 0.9375rem;
+      max-height: 0.9375rem;
+      border-radius: 0.625rem;
+      margin-bottom: 0.75rem;
+      background-color: $veryDarkBlue;
+      display: flex;
+      align-items: center;
+
+      .bar-self {
+        min-width: 74%;
+        min-height: 0.9375rem;
+        max-height: 0.9375rem;
+        border: solid 0.125rem $veryDarkBlue;
+        border-radius: 0.625rem;
+        background: linear-gradient(90deg, #ffa399, #ff4d97);
+        position: relative;
+      }
+      .bar-ball {
+        min-height: 0.6125rem;
+        max-height: 0.6125rem;
+        min-width: 0.6125rem;
+        max-width: 0.6125rem;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        right: 0.8rem;
+      }
+    }
+
+    &__gb {
+      color: $paleBlue;
+      font-size: 0.875rem;
+      font-weight: 700;
+      min-width: 15.5rem;
+      max-width: 15.5rem;
+      // margin-bottom: 1.25rem;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__gb-left {
+      max-width: 11.25rem;
+      max-height: 4.6875rem;
+      background-color: #fff;
+      border-radius: 0.625rem;
+      font-size: 0.625rem;
+      padding: 1.25rem 1.5625rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      bottom: -2.546875rem;
+
+      .left185 {
+        font-size: 2.1875rem;
+        font-weight: 700;
+        margin-right: 0.625rem;
+      }
+    }
+  }
+}

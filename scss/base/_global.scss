@@ -1,0 +1,23 @@
+body {
+  background-color: $veryDarkBlue;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  padding: 7.8125rem 1.5625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include for-tablet-landscape-up {
+    background-image: url(../images/bg-desktop.png);
+    background-position: bottom left (-4.5rem);
+    background-size: unset;
+  }
+  @include for-desktop-up {
+    background-position: bottom (-5rem) left;
+  }
+}

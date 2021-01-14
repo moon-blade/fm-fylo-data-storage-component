@@ -1,0 +1,50 @@
+.action {
+  margin-bottom: 2rem;
+  .action-content {
+    min-width: 20.3125rem;
+    max-width: 21.875rem;
+    background-color: $darkBlue;
+    border-radius: 0.625rem 6.25rem 0.625rem 0.625rem;
+    padding: 2.5rem 6.875rem 2.5rem 2.5rem;
+
+    &__logo {
+      margin-bottom: 2rem;
+      img {
+        max-width: 8.4375rem;
+        max-height: 2.5rem;
+      }
+    }
+
+    &__action {
+      display: flex;
+
+      .action-box {
+        border-radius: 0.625rem;
+        min-height: 3.125rem;
+        max-height: 3.125rem;
+        min-width: 3.125rem;
+        max-width: 3.125rem;
+        background-color: $veryDarkBlue;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+        transition: transform 100ms ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:not(:last-child) {
+          margin-right: 0.875rem;
+        }
+      }
+      .document {
+        background-image: url(../images/icon-document.svg);
+      }
+      .folder {
+        background-image: url(../images/icon-folder.svg);
+      }
+      .upload {
+        background-image: url(../images/icon-upload.svg);
+      }
+    }
+  }
+}
